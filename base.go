@@ -181,6 +181,7 @@ func (api *API) callBytes(method string, params interface{}) (b []byte, err erro
     Params:  params,
     ID:      id,
 	}
+	
 
 	b, err = json.Marshal(jsonobj)
 	if err != nil {
